@@ -21,10 +21,10 @@ const menorSalario = (func, funcAtual) => {
 //Uitlizando get para obter informações do servidor
 axios.get(url).then((response) => {
   const funcionarios = response.data;
-  console.log(funcionarios);
-
   //O Desafio é encontrar, dentro desse arquivo json,
   //a mulher chinesa com o menor salário
+
+  console.log('A mulher chinesa que tem o menor salário é:');
 
   //Constante funcionário
   const func = funcionarios
@@ -35,7 +35,7 @@ axios.get(url).then((response) => {
     //E reduzir para apenas a funcionária que tem essas características e tem o menor salário
     .reduce(menorSalario);
 
-  console.log(func);
+  console.log(func.nome);
 
   const func2 = funcionarios.filter(topic).reduce(menorSalario);
 
