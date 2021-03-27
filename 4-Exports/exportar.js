@@ -15,7 +15,7 @@ exports = null;
 //devido ao fato do this, exports
 //e module.exports apontarem para o mesmo objeto
 //todas as propriedades estão sendo armazenadas
-//no mesmo endereço de memória e a única coisa que será retornada será
+//no mesmo endereço de memória, porém, a única coisa que será retornada será
 //o module.exports
 console.log('Nesse caso será apenas retornado o');
 

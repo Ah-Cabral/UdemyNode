@@ -21,7 +21,7 @@ const http = require('http');
 http.createServer((req, res) => {
   res.write('Bom dia'); //Que retorna como resposta a string 'Bom dia'
   res.end(); //E finaliza o código
-}).listen(8080);
+}).listen(8080); O .listen faz com que esse server seja criado na porta desejada, nesse caso a 8080
 
 */
 
